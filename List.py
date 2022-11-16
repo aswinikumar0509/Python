@@ -162,10 +162,83 @@ for x in list2:
 
 print(list1)
 
+print("Hello World")
+
+print("-----------------------------")
+
+print("List Compression")
+
+print("---------------------------")
+
+fruits =["apple","banan","Cherry","Kiwi","mango"]
+
+newlist = []
+
+for x in fruits:
+    if "a" in x :
+        newlist.append(x)
+        print(newlist)
+
+print("-----------------------------------")
+
+fruits = ["apple","banan","Cherry","Kiwi","mango"]
+
+newlist1 = [ x for x in fruits if "a" in x]
+print(newlist1)
+
+newlist = [x for x in fruits if x!="apple"]
+print(newlist)
+
+print("-----------------------------")
+
+newlist = [ x for x in fruits]
+print(newlist)
 
 
 
+newlist = [x for x in range(10)]
+print(newlist)
+
+print("-----------------------------")
+
+newlist2 = ["hello" for x in fruits]
+print(newlist2)
 
 
+print("-------------- Lambda ------------------")
 
+x = lambda a : a+10
+print(x(5))
 
+x = lambda a , b : a*b
+print(x(5,6))
+
+x = lambda a , b , c : a+b+c
+print(x(5,6,2))
+
+def myfun(n):
+
+    return lambda a : a*n
+
+mydoubler = myfun(5)
+print(mydoubler(11))
+
+def myfun(n):
+    return lambda a:a*n
+
+mytripler = myfun(3)
+print(mytripler(11))
+
+def myfun(n):
+
+    return lambda a : a*n
+
+mydoubler = myfun(2)
+mytripler  = myfun(3)
+
+print(mydoubler(11))
+print(mytripler(11))
+
+print("-------------- NumPy-----------------")
+
+import numpy as np
