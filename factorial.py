@@ -1,8 +1,10 @@
-# Crearing the factorial function 
+# find the factorial of the number
 
-def factorial(n):
+def fact(n):
+
     if n==0:
         return 1
-    return n*factorial(n-1)
+    return n* fact(n-1)
 
-print(factorial(3))
+n = 5
+print(fact(n))
