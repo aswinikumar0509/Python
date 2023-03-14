@@ -1,8 +1,15 @@
-arr = [10,86,9,4,84,2]
-min_num = arr[0]
-for i in range(len(arr)):
-    if arr[i]<min_num:
-        min_num = arr[i]
+#finding the smallest number in the list with given k
 
-print(min_num)
-        
+def small(l,k):
+
+    res = []
+
+    for x in l:
+        if x < k:
+            res.append(x)
+
+    return res
+
+l = [10,47,90,45]
+k = 50
+print(small(l,k))            
